@@ -21,7 +21,7 @@
 title: J-code
 email: jkim68888@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  dreams of becoming an amazing developer, having fun coding everyday! Jihyun Kim.
+  dreaming of becoming an amazing developer, having fun coding everyday! Jihyun Kim.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
