@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+layout: blog
+title:  "github 시작하기(깃허브 사용법)"
 date:   2020-12-13 21:17:46 +0900
 categories: jekyll update
 ---
