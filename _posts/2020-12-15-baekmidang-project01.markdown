@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "첫번째 프로젝트, 백미당 메인페이지 제작하기(1)"
+title:  "백미당 프로젝트1 - 디자인과 코딩의 시작"
 date:   2020-12-15 09:17:46 +0900
 categories: jekyll update
 ---
