@@ -26,7 +26,7 @@ categories: jekyll update
 ![gif_mobile_sub](https://user-images.githubusercontent.com/75922558/105684788-c0a86200-5f38-11eb-913c-fa17b545ca3d.jpg)
 
 
-
+### 디자인 완료
 
 
 
