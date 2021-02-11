@@ -2,7 +2,7 @@
 layout: post
 title:  "jQuery 와 Ajax - $.ajax() 메소드"
 date:   2021-02-04 14:12:46 +0900
-categories: jekyll update
+categories: javascript
 ---
 지금 진행하고 있는 프로젝트의 서브페이지를 구현할때 Ajax로 데이터를 가져와서 화면에 뿌려주는 것을 해보았다. 
 이렇게 데이터를 가져올 수 있다는 것이 신기하기도 하고 개념이 어렵기도 해서 정리해놓으려고 한다.

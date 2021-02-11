@@ -2,7 +2,7 @@
 layout: post
 title:  "초보 github 시작하기(깃허브 사용법)"
 date:   2020-12-13 21:17:46 +0900
-categories: jekyll update
+categories: git
 ---
 Github(깃허브) 사용법에 대하여 아주 쉽고 간단하게 설명을 하려고한다.
 깃허브를 처음 접해본 사람으로써 사용방법이 쉽진 않다고 느꼈다. 그래서 깃허브 사용법을 정리해본다.
