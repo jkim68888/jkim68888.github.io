@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "영화관 웹페이지 제작과정 - 디자인편"
+title:  "두번째 프로젝트 - 영화관 리브랜딩 (디자인 과정)"
 date:   2021-01-25 09:17:46 +0900
 categories: jekyll update
 ---
@@ -26,7 +26,12 @@ categories: jekyll update
 ![gif_mobile_sub](https://user-images.githubusercontent.com/75922558/105684788-c0a86200-5f38-11eb-913c-fa17b545ca3d.jpg)
 
 
-### 디자인 완료
+
+
+
+
+### 디자인 과정
+디자인 툴은 Adobe Photoshop을 사용하였다. 시안은 UI/UX에 맞게 디자인하려고 노력했으며, 이미지 배너 또한 직접 제작하였다.
 
 
 

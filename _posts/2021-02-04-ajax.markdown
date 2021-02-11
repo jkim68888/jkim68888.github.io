@@ -50,8 +50,7 @@ jQuery는 Ajax와 관련된 다양하고 편리한 많은 메소드를 제공한
 <script src="https://gist.github.com/jkim68888/e0d57374085ef939895c50130b1397ab.js"></script>
 
 
-
-### 정리 끝
+위의 코드에서 success 했을때에 어떤 제이슨 데이터를 갖고올것인지 함수로 만들어서 사용하면 된다.
 
 
 
