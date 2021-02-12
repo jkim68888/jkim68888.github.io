@@ -21,19 +21,19 @@ repository는 원격저장소 인데 보통 프로젝트를 올릴 공간이므�
 
 ## Step03
 ### 저장소로 사용할 폴더 만들기
-컴퓨터에 저장소로 사용할 폴더를 만들어 줘야한다. step02에서 만든 repository 이름으로 폴더 하나를 만드는 것 보다는, repository가 여러개 만들어질 것이므로 그 폴더들을 다 감싸고 있는 폴더를 하나 만드는 것이 좋다. 예를 들어
-![이미지](https://user-images.githubusercontent.com/75922558/102016291-7a8da980-3da3-11eb-96ca-0ba3b32887be.JPG)
-이렇게 git이라는 폴더를 하나 만들고,
-![이미지](https://user-images.githubusercontent.com/75922558/102016303-94c78780-3da3-11eb-9c7f-1cbd24761d5b.JPG)
+컴퓨터에 저장소로 사용할 폴더를 만들어 줘야한다. step02에서 만든 repository 이름으로 폴더 하나를 만드는 것 보다는, repository가 여러개 만들어질 것이므로 그 폴더들을 다 감싸고 있는 폴더를 하나 만드는 것이 좋다. 예를 들어 <br>
+![이미지](https://user-images.githubusercontent.com/75922558/102016291-7a8da980-3da3-11eb-96ca-0ba3b32887be.JPG) <br>
+이렇게 git이라는 폴더를 하나 만들고, <br>
+![이미지](https://user-images.githubusercontent.com/75922558/102016303-94c78780-3da3-11eb-9c7f-1cbd24761d5b.JPG) <br>
 안에 repository이름의 폴더들을 넣어논다. 그 후, 깃허브에 올릴 파일들을 여기로 다 옮겨놓는다.
 
 ## step04
 ### cmd창에서 작업
 윈도우 검색창에 cmd를 검색해서 cmd창을 열어준다.
 여기서 step03에서 만든 폴더 위치로 들어가서 git init을 해줘야한다.
-이때 위치로 찾아서 들어가때의 팁은 , cmd 창에 dir이라고 치면 현재 내 디렉터리에 있는 폴더들을 보여준다. cd는 쉽게 해석하자면 그 폴더로 이동하라는 뜻이다. ./는 현재폴더로 들어가는 것이고, ../는 이전폴더로 나가는것이다. 나는 내문서에 있는 git 폴더로 들어갔다.
-![이미지](https://user-images.githubusercontent.com/75922558/102016716-972ae100-3da5-11eb-8906-4e1c173d3645.JPG)
-그 후, cmd 창에 다음과 같이 따라서 써주면 된다.
+이때 위치로 찾아서 들어가때의 팁은 , cmd 창에 dir이라고 치면 현재 내 디렉터리에 있는 폴더들을 보여준다. cd는 쉽게 해석하자면 그 폴더로 이동하라는 뜻이다. ./는 현재폴더로 들어가는 것이고, ../는 이전폴더로 나가는것이다. 나는 내문서에 있는 git 폴더로 들어갔다. <br>
+![이미지](https://user-images.githubusercontent.com/75922558/102016716-972ae100-3da5-11eb-8906-4e1c173d3645.JPG) <br>
+그 후, cmd 창에 다음과 같이 따라서 써주면 된다. <br>
 1. git init
 2. git add *
 3. git commit -m "first commit"
