@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "두번째 프로젝트 - 영화관 리브랜딩 (퍼블리싱/개발 과정)"
+date:   2021-02-15 09:17:46 +0900
+categories: project
+--- 
+
+## jQuery plugin - Swiper-slide
+
+### play/pause 버튼 구현
+
+![playpause01](https://user-images.githubusercontent.com/75922558/107927922-00ec8480-6fbb-11eb-8a04-b4d5882b1d9c.JPG)
+
+
+### progressbar 구현
+
+![progressbar](https://user-images.githubusercontent.com/75922558/107927952-0ba71980-6fbb-11eb-8be7-a0bfe2aded1d.JPG)
+
+
+## jQuery pulugin - Colorbox
+
+
+
+
+## map API
+
+
+
+## tabbar 구현
+
+
+
+
+## 파라미터 값
+
+## jQuery Date 객체 - 날짜 선택상자 구현
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "첫번째 프로젝트 - 백미당 리뉴얼 PC메인페이지"
+title:  "첫번째 프로젝트 - 백미당 리뉴얼 (PC메인페이지)"
 date:   2020-12-15 09:17:46 +0900
 categories: project
 ---
