@@ -5,16 +5,27 @@ date:   2021-02-15 09:17:46 +0900
 categories: project
 --- 
 
-## jQuery plugin - Swiper-slide
+## jQuery plugin - Swiper
 
 ### play/pause 버튼 구현
 
-![playpause01](https://user-images.githubusercontent.com/75922558/107927922-00ec8480-6fbb-11eb-8a04-b4d5882b1d9c.JPG)
+swiper slider 에는 pagination 과 prev/next 버튼은 있지만, play/pause 버튼 기능이 없다. 나는 슬라이더에 재생/멈춤 버튼을 추가하고 싶어서 직접 구현하였다.
 
+#### play button & pause button
+<script src="https://gist.github.com/jkim68888/8d2c5ef700420e4a3a2edc53b740aad7.js"></script>
+
+제이쿼리의 click 이벤트를 사용하여, play 버튼을 클릭했을때와 pause버튼을 클릭했을때의 경우를 작성하였다. play 버튼을 클릭했을 시에는 swiper 플러그인이 갖고 있는 slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리한 다음, autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 하였다. pause 버튼을 클릭했을 시에는 swiper 플러그인이 갖고 있는 autoplay.stop() 메소드를 사용하여 슬라이드를 멈추게했다.
+
+#### play/pause toggle button
+<script src="https://gist.github.com/jkim68888/c5dc6515b59481e77baac9c601eb318d.js"></script>
+
+위의 play/pause 버튼과는 달리, 버튼 한개로 재생과 멈춤을 반복하는 버튼이다. 하나의 버튼이두가지 기능을 하니까 토글 버튼이라 할 수 있다. 토글 버튼을 구현할 때에는 if문 을 사용하였다. swiper api 를 확인해보면, 스와이퍼 플러그인은 stop 이라는 클래스를 갖고 있다. 이 점을 이용하여 버튼을 클릭하였을때, hasClass()를 사용하여 만약 버튼이 stop 클래스를 갖고 있다면 (= 재생이 멈추어 있다면) stop 클래스를 없애고, 다음 슬라이드로 넘긴뒤 슬라이드를 자동재생시켜주었다. 만약 그렇지 않을 경우에는 (= 재생되고 있을 경우) stop 클래스를 주고, autoplay.stop() 메소드로 재생을 멈추었다.
 
 ### progressbar 구현
 
-![progressbar](https://user-images.githubusercontent.com/75922558/107927952-0ba71980-6fbb-11eb-8be7-a0bfe2aded1d.JPG)
+<script src="https://gist.github.com/jkim68888/7f8ed7b1e24fb97e4cc6a7e2715d51dd.js"></script>
+
+스와이퍼 플러그인은 프로그레스바를 제공해준다. 따라서 제이쿼리에서 pagination의 type을 progressbar로 해주면 프로그래스바는 구현된다. 만약 기본 progressbar 의 css가 마음에 들지 않는다면, 해당 클래스를 찾아 css를 바꿔주면 된다. 나는 고정된 배경색을 gray로, progressing 되는 배경색을 green으로 바꾸어보았다. 
 
 
 ## jQuery pulugin - Colorbox
