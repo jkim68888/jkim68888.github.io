@@ -1,0 +1,95 @@
+I"�<h2 id="jquery-plugin---swiper">jQuery plugin - Swiper</h2>
+
+<h3 id="playpause-버튼-구현">play/pause 버튼 구현</h3>
+
+<p>swiper slider 에는 pagination 과 prev/next 버튼은 있지만, play/pause 버튼 기능이 없다. 나는 슬라이더에 재생/멈춤 버튼을 추가하고 싶어서 직접 구현하였다.</p>
+
+<h4 id="play-button--pause-button">play button &amp; pause button</h4>
+<script src="https://gist.github.com/jkim68888/8d2c5ef700420e4a3a2edc53b740aad7.js"></script>
+
+<ul>
+  <li>제이쿼리의 click 이벤트를 사용하여, play 버튼을 클릭했을때와 pause버튼을 클릭했을때의 경우를 작성하였다.</li>
+  <li>play 버튼을 클릭시,
+    <ul>
+      <li>swiper 플러그인이 갖고 있는 slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리</li>
+      <li>autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 처리</li>
+    </ul>
+  </li>
+  <li>pause 버튼을 클릭시,
+    <ul>
+      <li>swiper 플러그인이 갖고 있는 autoplay.stop() 메소드를 사용하여 슬라이드를 멈추게 처리</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="playpause-toggle-button">play/pause toggle button</h4>
+<script src="https://gist.github.com/jkim68888/c5dc6515b59481e77baac9c601eb318d.js"></script>
+
+<ul>
+  <li>위의 play/pause 버튼과는 달리, 버튼 한개로 재생과 멈춤을 반복하는 버튼이다. 하나의 버튼이두가지 기능을 하니까 토글 버튼이라 할 수 있다.</li>
+  <li>토글 버튼을 구현할 때에는 if문 을 사용하였다.</li>
+  <li>swiper api 를 확인해보면, 스와이퍼 플러그인은 stop 이라는 클래스를 갖고 있다. 이 점을 이용하여,</li>
+  <li>hassClass() 메소드로 stop 클래스를 갖고 있는지 아닌지 if문으로 판단한 다음,</li>
+  <li>슬라이드가 멈춰있을때(= stop클래스를 갖고 있을때) 버튼을 클릭하면
+    <ul>
+      <li>removeClass()를 사용하여 stop 클래스를 제거 후</li>
+      <li>slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리 후</li>
+      <li>autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 처리하였다.</li>
+    </ul>
+  </li>
+  <li>슬라이드가 재생되고 있을때(= stop클래스를 갖고 있지 않을때) 버튼을 클릭하면
+    <ul>
+      <li>addClass()로 stop 클래스를 준 후</li>
+      <li>autoplay.stop() 메소드로 재생을 멈추었다.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="progressbar-구현">progressbar 구현</h3>
+
+<script src="https://gist.github.com/jkim68888/7f8ed7b1e24fb97e4cc6a7e2715d51dd.js"></script>
+
+<ul>
+  <li>스와이퍼 플러그인은 프로그레스바를 제공해준다.</li>
+  <li>사용방법
+    <ul>
+      <li>pagination의 type을 progressbar로 바꾼다.</li>
+      <li>해당 클래스를 찾아 css를 바꿔준다. (선택사항)
+        <ul>
+          <li>(나는 고정된 배경색을 gray로, progressing 되는 배경색을 green으로 바꾸어보았다.)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="jquery-pulugin---colorbox">jQuery pulugin - Colorbox</h2>
+
+<script src="https://gist.github.com/jkim68888/ca8037ea92d75dfdc53ca79cf4a18ae1.js"></script>
+
+<ul>
+  <li>컬러박스 플러그인이 제공해주는 옵션들을 js에서 설정한다.
+    <ul>
+      <li>width, height로 영역을 설정한다.</li>
+      <li>아이프레임 팝업으로 띄워질 수 있게 iframe 을 true로 설정한다.</li>
+      <li>스크롤은 안되게 한다.</li>
+    </ul>
+  </li>
+  <li>컬러박스에서 사용된 선택자들을 사용하여 css를 내가 원하는대로 바꾼다.</li>
+</ul>
+
+<h2 id="map-api">map API</h2>
+
+<script src="https://gist.github.com/jkim68888/1769bc0f23b4cf06ebc34c331aa5b479.js"></script>
+
+<ul>
+  <li>카카오 맵 api를 사용하였다.</li>
+</ul>
+
+<h2 id="tabbar-구현">tabbar 구현</h2>
+
+<h2 id="파라미터-값">파라미터 값</h2>
+
+<h2 id="jquery-date-객체---날짜-선택상자-구현">jQuery Date 객체 - 날짜 선택상자 구현</h2>
+
+:ET

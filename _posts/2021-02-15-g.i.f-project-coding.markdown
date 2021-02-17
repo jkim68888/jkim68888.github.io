@@ -14,37 +14,75 @@ swiper slider 에는 pagination 과 prev/next 버튼은 있지만, play/pause �
 #### play button & pause button
 <script src="https://gist.github.com/jkim68888/8d2c5ef700420e4a3a2edc53b740aad7.js"></script>
 
-제이쿼리의 click 이벤트를 사용하여, play 버튼을 클릭했을때와 pause버튼을 클릭했을때의 경우를 작성하였다. play 버튼을 클릭했을 시에는 swiper 플러그인이 갖고 있는 slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리한 다음, autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 하였다. pause 버튼을 클릭했을 시에는 swiper 플러그인이 갖고 있는 autoplay.stop() 메소드를 사용하여 슬라이드를 멈추게했다.
+- 제이쿼리의 click 이벤트를 사용하여, play 버튼을 클릭했을때와 pause버튼을 클릭했을때의 경우를 작성하였다. 
+- play 버튼을 클릭시,
+    - swiper 플러그인이 갖고 있는 slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리
+    - autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 처리
+- pause 버튼을 클릭시,
+    - swiper 플러그인이 갖고 있는 autoplay.stop() 메소드를 사용하여 슬라이드를 멈추게 처리
 
 #### play/pause toggle button
 <script src="https://gist.github.com/jkim68888/c5dc6515b59481e77baac9c601eb318d.js"></script>
 
-위의 play/pause 버튼과는 달리, 버튼 한개로 재생과 멈춤을 반복하는 버튼이다. 하나의 버튼이두가지 기능을 하니까 토글 버튼이라 할 수 있다. 토글 버튼을 구현할 때에는 if문 을 사용하였다. swiper api 를 확인해보면, 스와이퍼 플러그인은 stop 이라는 클래스를 갖고 있다. 이 점을 이용하여 버튼을 클릭하였을때, hasClass()를 사용하여 만약 버튼이 stop 클래스를 갖고 있다면 (= 재생이 멈추어 있다면) stop 클래스를 없애고, 다음 슬라이드로 넘긴뒤 슬라이드를 자동재생시켜주었다. 만약 그렇지 않을 경우에는 (= 재생되고 있을 경우) stop 클래스를 주고, autoplay.stop() 메소드로 재생을 멈추었다.
+- 위의 play/pause 버튼과는 달리, 버튼 한개로 재생과 멈춤을 반복하는 버튼이다. 하나의 버튼이두가지 기능을 하니까 토글 버튼이라 할 수 있다. 
+- 토글 버튼을 구현할 때에는 if문 을 사용하였다. 
+- swiper api 를 확인해보면, 스와이퍼 플러그인은 stop 이라는 클래스를 갖고 있다. 이 점을 이용하여,
+- hassClass() 메소드로 stop 클래스를 갖고 있는지 아닌지 if문으로 판단한 다음, 
+- 슬라이드가 멈춰있을때(= stop클래스를 갖고 있을때) 버튼을 클릭하면
+    - removeClass()를 사용하여 stop 클래스를 제거 후
+    - slideNext() 메소드를 사용하여 다음 슬라이드로 넘어가게 처리 후
+    - autoplay.start() 메소드를 사용하여 슬라이드가 자동 재생 되게 처리하였다.
+- 슬라이드가 재생되고 있을때(= stop클래스를 갖고 있지 않을때) 버튼을 클릭하면 
+    - addClass()로 stop 클래스를 준 후
+    - autoplay.stop() 메소드로 재생을 멈추었다.
 
 ### progressbar 구현
 
 <script src="https://gist.github.com/jkim68888/7f8ed7b1e24fb97e4cc6a7e2715d51dd.js"></script>
 
-스와이퍼 플러그인은 프로그레스바를 제공해준다. 따라서 제이쿼리에서 pagination의 type을 progressbar로 해주면 프로그래스바는 구현된다. 만약 기본 progressbar 의 css가 마음에 들지 않는다면, 해당 클래스를 찾아 css를 바꿔주면 된다. 나는 고정된 배경색을 gray로, progressing 되는 배경색을 green으로 바꾸어보았다. 
+- 스와이퍼 플러그인은 프로그레스바를 제공해준다.
+- 사용방법
+    - pagination의 type을 progressbar로 바꾼다. 
+    - 해당 클래스를 찾아 css를 바꿔준다. (선택사항) 
+        - (나는 고정된 배경색을 gray로, progressing 되는 배경색을 green으로 바꾸어보았다.) 
 
 
 ## jQuery pulugin - Colorbox
 
+<script src="https://gist.github.com/jkim68888/ca8037ea92d75dfdc53ca79cf4a18ae1.js"></script>
 
+- 컬러박스 플러그인이 제공해주는 옵션들을 js에서 설정한다.
+    - width, height로 영역을 설정한다.
+    - 아이프레임 팝업으로 띄워질 수 있게 iframe 을 true로 설정한다.
+    - 스크롤은 안되게 한다.
+- 컬러박스에서 사용된 선택자들을 사용하여 css를 내가 원하는대로 바꾼다.
 
 
 ## map API
 
+<script src="https://gist.github.com/jkim68888/1769bc0f23b4cf06ebc34c331aa5b479.js"></script>
 
+- 카카오 맵 api를 사용하였다.
+- 카카오 맵 api 홈페이지에서 key를 발급받아야 사용할 수 있다.
+- javscript 코드를 복사한다.
+- script로 key 값을 연결한다.
+- oauth 파일을 생성한다.
+- 커스터마이징은 홈페이지에 있는 설명을 잘 읽고 따라하면 된다.
 
 ## tabbar 구현
 
+<script src="https://gist.github.com/jkim68888/5808b3a8e5ec813677210b334451f9f8.js"></script>
+
+- html 
+    - tabbar와 contents를 ul > li > a 태그로 나열한다.
+- jquery 
+    - 탭바의 리스트 중 하나를 클릭했을때 그 리스트에 맞는 컨텐츠를 보여주기 위하여 li의 index 값을 구한다.
+    - eq(index)를 통해 해당 컨텐츠를 찾아 보여준다. eq()는 인덱스번호로 요소를 찾는 메소드이다.
 
 
+## PHP로 데이터베이스 작업
 
-## 파라미터 값
-
-## jQuery Date 객체 - 날짜 선택상자 구현
+- 회원가입, 로그인, 게시판 작업은 php로 하였다.
 
 
 
