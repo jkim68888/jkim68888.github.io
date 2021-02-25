@@ -2,7 +2,7 @@
 layout: post
 title:  "데이터형식 - JSON"
 date:   2021-02-07 14:12:46 +0900
-categories: javascript
+categories: data
 ---
 데이터 형식에는 여러가지가 있다. 예를 들면 csv, xml, json 등이 있다.
 그중에서 json형식의 데이터에 대해서 정리하려고 한다.
