@@ -14,12 +14,12 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: Jihyun's blog
+      title: Jihyun's Devlog
 
-description: Hello. This is Jihyun's blog.
+description: Hello. This is Jihyun's Devlog.
 author:
   name: 김지현
-  email: jkim68888@google.com
+  email: jkim68888@gmail.com
   github: jkim68888
   bio: 제 블로그에 오신 것을 환영합니다! <br /> 이것은 배운 것을 정리하고 복습하는 <br /> 개발 블로그입니다.
 

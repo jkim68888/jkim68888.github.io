@@ -82,7 +82,7 @@ swiper slider 에는 pagination 과 prev/next 버튼은 있지만, play/pause �
 
 ## PHP로 데이터베이스 작업
 
-- 회원가입, 로그인, 게시판 작업은 php로 하였다.
+- 회원가입, 로그인, 게시판 작업은 php로 구현하였다.
 
 
 

@@ -1,0 +1,106 @@
+---
+layout: post
+title:  "JS - BOM & DOM "
+date:   2021-02-25 14:12:46 +0900
+categories: javascript
+---
+## BOM의 개념
+
+- Browser Object Model
+- 브라우저 관련 객체이다.
+<br>
+
+## BOM의 종류
+
+- window : 브라우저 창을 의미하는 객체
+- screen : 운영체제의 화면을 의미하는 객체
+- location : 브라우저의 주소표시줄 객체
+- history : 브라우저 기록객체 (이전/다음버튼 혹은 주소내역)
+- navigator : 브라우저 자체(크롬..)를 의미하는 객체
+- cookie : 사이트에 접속시 정보를 저장하는 작은 파일
+- document : 문서객체
+<br>
+
+## BOM의 속성
+
+### 속성
+- 속성이란 객체가 갖은 특징을 기술한것이다. 
+- 문법:  객체명.속성명;
+- 속성값을 변경할때의 문법:  객체명.속성명 = 값;
+
+<br>
+
+1. window 속성
+- 창 크기에 대한 속성이다.
+<br>
+    1. window.innerWidth; -> 내부 문서 가로 크기 <br>
+    2. window.outerWidth; -> 창 전체 가로 크기<br>
+    3. window.innerHeight; -> 내부 문서 세로 크기<br>
+    4. window.innerHeight; -> 창 전체 세로 크기<br>
+<br>
+
+2. screen 속성
+- 운영체제의 화면 크기에 대한 속성이다. 즉, 브라우저 창이 아닌 사용자 화면에 대한 정보이다.
+<br>
+    1. screen.width : 화면 가로폭<br>
+    2. screen.height : 화면 세로 높이<br>
+    3. screen.availWidth : 사용가능한 화면 가로폭<br>
+    4. screen.availHeight : 사용가능한 화면 세로높이<br>
+    5. screen.colorDepth : 모니터 해상도 컬러 수 <br>
+    6. screen.pixelDepth : 모니터 해상도 픽셀 수<br>
+<br>
+
+3. location 속성
+- 주소표시줄 관련 속성이다.
+<br>
+    1. location.href : 현재 페이지의 url을 반환<br>
+    2. location.hostname : 현재 페이지의 도메인명을 반환<br>
+    3. location.pathname : 현재 페이지의 경로와 파일명을 반환<br>
+    4. location.protocol : 페이지의 프로토콜(http:// 혹은 https://)을 반환<br>
+<br>
+
+- 예제
+<br>
+<script src="https://gist.github.com/jkim68888/313a83144c8c87febe9e7b180538c462.js"></script>
+
+4. navigator 속성
+<br>
+    1. navigator.appName : 브라우저 어플리케이션에 대한 정보 반환 <br>
+    2. navigator.appVersion : 브라우저 버전 반환 <br>
+    3. navigator.userAgent : 브라우저 서버 정보 반환 / 모바일 기기인지 확인할때 사용함<br>
+
+5. cookie
+<br>
+    1. 쿠키생성
+        - document.cookie = '속성명=값;';
+    2. 쿠키 읽어오기
+        - var 변수명 = document.cookie;
+    3. 쿠키 삭제
+        - document.cookie = '속성명=;';
+<br>
+
+
+
+## DOM의 개념
+
+- Document Object Model
+- 문서 관련 객체이다.
+
+## DOM 메소드
+- 여러가지 문서 객체 메소드들 중 몇가지만 보겠다.
+    1. 요소생성메서드 : createElement('태그명');
+    2. 텍스트노드생성메서드 : createTextNode('문자열');
+    3. 요소삽입메서드 : appendChild(요소) - 자손으로 삽입;
+    4. 문서객체자체제거 : 요소.remove();
+    5. 문서객체 내부 자손후손제거 : 요소.empty();
+    6. 기존 자손을 새로운 자손으로 변경 : replaceChild(new,old);
+    7. 아이디명으로 문서객체 선택 : document.getElementById('아이디명');
+
+
+
+## Node의 개념
+- Node는 여러 가지 DOM 타입들이 상속하는 인터페이스이며 그 다양한 타입들을 비슷하게 처리할 수 있게 한다.
+
+
+
+
