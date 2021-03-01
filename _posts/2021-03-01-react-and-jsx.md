@@ -2,7 +2,7 @@
 layout: post
 title:  "React 개발환경 구축 및 JSX 기초문법"
 date:   2021-03-01 21:16:46 +0900
-categories: TIL
+categories: react
 ---
 
 오늘은 React로 개발하기 위한 환경을 구축하는 방법을 정리한 후, 기초적인 JSX 문법을 정리하려고 한다.
