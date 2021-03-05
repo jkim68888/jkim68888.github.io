@@ -5,20 +5,20 @@ paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
 highlighter: rouge
 markdown: kramdown
-disqus: 김지현
-google_analytics: 김지현
-title: 김지현
+disqus: Jihyun
+google_analytics: Jihyun
+title: Jihyun's blog
 
 defaults:
   -
     scope:
       path: "" # empty string for all files
     values:
-      title: Jihyun's Devlog
+      title: Jihyun's blog
 
-description: Hello. This is Jihyun's Devlog.
+description: Hello. This is Jihyun's blog.
 author:
-  name: 김지현
+  name: Jihyun
   email: jkim68888@gmail.com
   github: jkim68888
   bio: 제 블로그에 오신 것을 환영합니다! <br /> 이것은 배운 것을 정리하고 복습하는 <br /> 개발 블로그입니다.
