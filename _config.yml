@@ -7,7 +7,7 @@ highlighter: rouge
 markdown: kramdown
 disqus: Jihyun
 google_analytics: Jihyun
-title: Jihyun's blog
+title: Jihyun
 
 defaults:
   -
@@ -21,7 +21,7 @@ author:
   name: Jihyun
   email: jkim68888@gmail.com
   github: jkim68888
-  bio: 제 블로그에 오신 것을 환영합니다! <br /> 이것은 배운 것을 정리하고 복습하는 <br /> 개발 블로그입니다.
+  bio: 
 
 rss_path: feed.xml
 categories_path: categories.html
